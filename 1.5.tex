@@ -1,0 +1,134 @@
+\documentclass[aspectratio=169]{ctexbeamer}
+\usepackage{tikz}
+%\usepackage{pgfplots}
+%\usetikzlibrary{calc}
+\usepackage{amssymb,amsmath}
+%\usepackage{enumitem}
+\usepackage{geometry}
+%\geometry{paperwidth=200mm}
+%\pgfplotsset{compat=1.18}
+\usetheme{Madrid} %Madrid，蓝色调为主。
+\usecolortheme{beaver} %beaver
+\usefonttheme{professionalfonts}
+%\setbeamertemplate{section in toc}[sections numbered]
+\title{1.5 有理数的大小比较}
+\author{华东师大版七年级上册}
+\date{}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\section{概念讲解}
+\begin{frame}{比较规则}
+    \begin{block}{有理数大小比较法则}
+        \begin{enumerate}
+            \item 正数 \alert{>} 0，负数 \alert{<} 0
+            \item 正数 \alert{>} 所有负数
+            \item 两个负数比较：\\绝对值大的反而\alert{小}！
+            \item 数轴上右边的数总比左边的\alert{大}
+        \end{enumerate}
+    \end{block}
+    
+    \begin{example}
+        $-3 \quad \& \quad 2$\quad (正 > 负)\\
+        $-5 \quad \& \quad -3$\quad (绝对值5 > 3 ⇒ $-5 < -3$)
+    \end{example}
+\end{frame}
+
+\section{例题演示}
+\begin{frame}{例题1：数轴比较法}
+    \begin{example}
+        把下列各数表示在数轴上，并用"<"连接：\\
+        $-2,\ 0,\ 3,\ -3.5,\ 1.5$
+    \end{example}
+    
+    \pause
+    \begin{block}{解题步骤}
+        \begin{enumerate}
+            \item 画数轴并标出所有数
+            \item 从左到右（从小到大）排列
+            \item 结果：$-3.5 < -2 < 0 < 1.5 < 3$
+        \end{enumerate}
+    \end{block}
+\end{frame}
+
+\begin{frame}{例题2：负数比较}
+    \begin{example}
+        比较大小：$-2.5$ 和 $-\frac{7}{3}$
+    \end{example}
+    
+    \pause
+    \begin{block}{解题步骤}
+        \begin{enumerate}
+            \item 求绝对值：$| -2.5 | = 2.5 = \frac{5}{2} = \frac{15}{6}$\\
+            $| -\frac{7}{3} | = \frac{7}{3} = \frac{14}{6}$
+            \item 比较绝对值：$\frac{15}{6} > \frac{14}{6}$
+            \item 结论：$-2.5 < -\frac{7}{3}$
+        \end{enumerate}
+    \end{block}
+\end{frame}
+
+\section{课堂练习}
+\begin{frame}{随堂练习1}
+    \begin{block}{练习题}
+        用"<"连接下列各数：\\
+        $-1.2,\ -3,\ 0,\ 2.5,\ -\frac{4}{5}$
+    \end{block}
+    
+    \pause
+    \begin{alertblock}{答案}
+        $-3 < -1.2 < -\frac{4}{5} < 0 < 2.5$
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{随堂练习2}
+    \begin{block}{挑战题}
+        已知$a = -|-3.2|$，$b = -(-2.5)$，比较$a$与$b$的大小
+    \end{block}
+    
+    \pause
+    \begin{alertblock}{解答}
+        \begin{itemize}
+            \item $a = -3.2$
+            \item $b = 2.5$
+            \item $\therefore a < b$
+        \end{itemize}
+    \end{alertblock}
+\end{frame}
+
+\section{课后习题}
+\begin{frame}{作业布置}
+    \begin{block}{必做题}
+        \begin{enumerate}
+            \item 教材P25练习1-3题
+            \item 比较：$-2.7$与$-2\frac{2}{3}$
+            \item 把$-6, 0, -1.5, 3\frac{1}{2}$用">"连接
+        \end{enumerate}
+    \end{block}
+    
+    \begin{block}{选做题}
+        若$|x| = 3$，$|y| = 5$，且$x > y$，求$x,y$的值
+    \end{block}
+\end{frame}
+
+\begin{frame}{要点总结}
+    \begin{itemize}
+        \item \alert{数轴}是直观比较的重要工具
+        \item 两个负数比较：绝对值大者反而小
+        \item 比较步骤：\\
+        \begin{tabular}{ll}
+            同类数 & 直接比较\\
+            异类数 & 正 > 负\\
+            两负数 & 先比绝对值再判断
+        \end{tabular}
+    \end{itemize}
+    
+    \vspace{1cm}
+    \centering
+    \alert{下节预告：有理数的加减运算}
+\end{frame}
+
+\end{document}
