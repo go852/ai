@@ -4,7 +4,9 @@ LATEXMK=latexmk -xelatex
 
 .PHONY:c d clean distclean
 
-all:$(MAIN).tex
+all:$(MAIN).pdf
+
+$(MAIN).pdf:$(MAIN).tex
 	$(LATEXMK) $<
 
 clean: 
