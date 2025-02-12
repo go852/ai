@@ -1,0 +1,126 @@
+\documentclass{ctexbeamer}
+\usetheme{Madrid} % 可选主题
+\usepackage{ctex}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+
+\title{华东师大版七年级上册数学 1.6节}
+\subtitle{有理数的加减混合运算} % 根据实际修改
+\author{你的名字}
+\date{\today}
+
+\begin{document}
+
+% 目录页
+\begin{frame}{目录}
+    \tableofcontents
+\end{frame}
+
+\section{学习目标}
+\begin{frame}{学习目标}
+    \begin{block}{知识目标}
+        \begin{itemize}
+            \item 掌握有理数加减混合运算的步骤
+            \item 理解去括号法则的符号变化规律
+        \end{itemize}
+    \end{block}
+
+    \begin{block}{能力目标}
+        \begin{itemize}
+            \item 能解决含分数的混合运算问题
+            \item 培养数学抽象与逻辑推理能力
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\section{知识点回顾}
+\begin{frame}{知识点回顾}
+    \begin{exampleblock}{有理数加法法则}
+        \begin{align*}
+            (+a) + (+b) &= +(a+b) \\
+            (-a) + (-b) &= -(a+b) \\
+            (+a) + (-b) &= 
+            \begin{cases}
+                +(a-b) & \text{若 } a > b \\
+                -(b-a) & \text{若 } a < b
+            \end{cases}
+        \end{align*}
+    \end{exampleblock}
+
+    \begin{alertblock}{注意}
+        减法统一为加法：$a - b = a + (-b)$
+    \end{alertblock}
+\end{frame}
+
+\section{新知识讲解}
+\begin{frame}{混合运算步骤}
+    \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black]
+        \textbf{三步法：}
+        \begin{enumerate}
+            \item 将减法转换为加法
+            \item 去括号（注意符号变化）
+            \item 按顺序计算
+        \end{enumerate}
+    \end{tcolorbox}
+
+    \begin{example}
+        \[
+        (-3) + 5 - (-2) - 7 = (-3) + 5 + (+2) + (-7)
+        \]
+        \pause
+        \[
+        = [(-3) + (-7)] + (5 + 2) = (-10) + 7 = -3
+        \]
+    \end{example}
+\end{frame}
+
+\section{典型例题}
+\begin{frame}{例题分析}
+    \begin{block}{例题1：温度变化计算}
+        某地一周温度变化记录：+3°, -2°, +5°, -4°, +1°, 求总变化量
+    \end{block}
+
+    \begin{align*}
+        \uncover<2->{&3 + (-2) + 5 + (-4) + 1 \\}
+        \uncover<3->{&= (3+5+1) + [(-2)+(-4)] \\}
+        \uncover<4->{&= 9 + (-6) = +3^\circ}
+    \end{align*}
+\end{frame}
+
+\section{课堂练习}
+\begin{frame}{课堂练习}
+    \begin{enumerate}
+        \item 计算：$(-4\frac{1}{2}) + 3.7 - (-2.3) + 5$
+        \pause
+        \item 应用题：小明先向西走5km，再向东走8km，最后向西走3km，求最终位置
+    \end{enumerate}
+
+    \vspace{1cm}
+    \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+        提示：使用"正负号"表示方向，东方为正
+    \end{tcolorbox}
+\end{frame}
+
+\section{总结}
+\begin{frame}{总结与作业}
+    \begin{columns}
+        \column{0.6\textwidth}
+        \begin{block}{知识树}
+            \begin{itemize}
+                \item 符号处理 → 统一加法
+                \item 运算顺序 → 从左到右
+                \item 实际应用 → 温度/位移
+            \end{itemize}
+        \end{block}
+
+        \column{0.4\textwidth}
+    \end{columns}
+
+    \begin{alertblock}{作业}
+        教材P35 习题1.6：第2,4,6题\\
+        选做：设计商店打折问题
+    \end{alertblock}
+\end{frame}
+
+\end{document}
