@@ -1,15 +1,18 @@
-\documentclass[aspectratio=169]{ctexbeamer}
+\documentclass[aspectratio=169]{ctexbeamer} %[t]：顶端对齐
+%\setlength{\parindent}{2em} % 设置缩进为2em
 \usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc}
 \usepackage{pgfplots}
-\usetikzlibrary{calc}
+\pgfplotsset{compat=1.18} %兼容到1.18版及以下版本的特性
 \usepackage{amssymb,amsmath}
 \usepackage{enumitem}
+\usepackage{setspace} %设置行间距
 \usepackage{geometry}
-%\geometry{paperwidth=200mm}
-\pgfplotsset{compat=1.18}
+%\geometry{paperwidth=320mm, paperheight=180mm}
 \usetheme{Madrid} %Madrid，蓝色调为主。
 \usecolortheme{beaver} %beaver
 \usefonttheme{professionalfonts}
+
 
 \date{\today}
 \begin{document}
@@ -19,5 +22,7 @@
 \input{1.3相反数}
 \input{1.4绝对值}
 \input{1.5有理数的大小比较}
-
+\input{1.6有理数的加法}
+\input{1.7有理数的减法}
+\input{1.8有理数的加减混合运算}
 \end{document}
