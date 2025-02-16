@@ -1,10 +1,11 @@
 MAIN=七年级上册重点
 SHELL=bash
-LATEXMK=latexmk -xelatex
+LATEXMK=latexmk -quiet -xelatex --shell-escape
 
-.PHONY:c d clean distclean
+.PHONY:all c d clean distclean
 
 all:$(MAIN).pdf
+	make clean
 
 $(MAIN).pdf:$(MAIN).tex
 	$(LATEXMK) $<
