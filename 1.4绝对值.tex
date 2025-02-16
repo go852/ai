@@ -1,4 +1,4 @@
-
+% 1.4 绝对值
 \begin{frame}{1.4绝对值}
 \textbf{\textcolor{orange}{定义：我们把在数轴上表示数$a$的点与原点的距离叫做数$a$的绝对值, 记作|$a$|.}}
 \begin{columns}
@@ -24,7 +24,8 @@
 
 %绝对值函数图象
 \column{0.5\textwidth}
-\begin{tikzpicture}[scale=1]
+\begin{tikzpicture}[scale=2]
+\fontsize{12}{14}\selectfont
 \begin{axis}[
     axis lines=middle,
     xlabel=$x$, ylabel=$y$,
@@ -45,11 +46,30 @@
 % 绝对值与相反数的比较
 \begin{frame}{绝对值与相反数的比较}
 \begin{columns}
+%绝对值函数图象
+\column{0.5\textwidth}
+\textbf{绝对值的函数图象} \\
+\begin{tikzpicture}[scale=2]
+\fontsize{12}{14}\selectfont
+\begin{axis}[
+    axis lines=middle,
+    xlabel=$x$, ylabel=$y$,
+    xmin=-4, xmax=4, ymin=-4, ymax=4,
+    samples=500,
+    grid=both,
+    restrict y to domain=-10:10,
+]
+\addplot[red, thick] {abs(x)};
+\node[black] at (0,0) [below left] {0};
+\node[blue] at (-1.5,1) [left] {$f(x)=|x|$};
+\end{axis}
+\end{tikzpicture}
 
 %相反数函数图象
 \column{0.5\textwidth}
-\textbf{相反数的函数图象}
-\begin{tikzpicture}[scale=1]
+\textbf{相反数的函数图象} \\
+\begin{tikzpicture}[scale=2]
+\fontsize{12}{14}\selectfont
 \begin{axis}[
     axis lines=middle,
     xlabel=$x$, ylabel=$y$,
@@ -64,23 +84,6 @@
 \end{axis}
 \end{tikzpicture}
 
-%绝对值函数图象
-\column{0.5\textwidth}
-\textbf{绝对值的函数图象}
-\begin{tikzpicture}[scale=1]
-\begin{axis}[
-    axis lines=middle,
-    xlabel=$x$, ylabel=$y$,
-    xmin=-4, xmax=4, ymin=-4, ymax=4,
-    samples=500,
-    grid=both,
-    restrict y to domain=-10:10,
-]
-\addplot[red, thick] {abs(x)};
-\node[black] at (0,0) [below left] {0};
-\node[blue] at (-1.5,1) [left] {$f(x)=|x|$};
-\end{axis}
-\end{tikzpicture}
 \end{columns}
 \end{frame}
 
