@@ -4,4 +4,4 @@
 !*.tex
 !*.sty
 !Makefile
-!pdf/*
+!*.pdf
