@@ -1,6 +1,6 @@
-MAIN=七年级上册重点
+MAIN=七年级上册
 SHELL=bash
-LATEXMK=latexmk -quiet -xelatex -shell-escape
+LATEXMK=latexmk -quiet -xelatex --shell-escape
 
 .PHONY:all c d clean distclean
 
