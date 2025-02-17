@@ -4,7 +4,6 @@ LATEXMK=latexmk -xelatex --shell-escape
 LATEXMK=latexmk -quiet -xelatex --shell-escape
 TEX=$(wildcard *.tex)
 PDF=$(TEX:.tex=.pdf)
-MAIN=main
 
 .PHONY:all clean distclean c d
 
@@ -26,7 +25,7 @@ clean:
 	@rm -f *.toc
 	@rm -f *.vrb
 	@rm -f *.xdv
-	@rm -rf _minted 
+	@rm -rf _minted*
 
 distclean : clean
 	@rm -f *.pdf
