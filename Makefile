@@ -26,7 +26,7 @@ clean:
 	@rm -f *.toc
 	@rm -f *.vrb
 	@rm -f *.xdv
-	@rm -rf _minted 
+	@rm -rf _minted*
 
 distclean : clean
 	@rm -f *.pdf
