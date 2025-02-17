@@ -1,13 +1,17 @@
-MAIN=七年级上册
 SHELL=bash
+LATEX=xelatex --shell-escape
+LATEXMK=latexmk -xelatex --shell-escape
 LATEXMK=latexmk -quiet -xelatex --shell-escape
+TEX=$(wildcard *.tex)
+PDF=$(TEX:.tex=.pdf)
+MAIN=七年级上册
 
-.PHONY:all c d clean distclean
+.PHONY:all clean distclean c d
 
-all:$(MAIN).pdf
+all:$(PDF)
 	make clean
 
-$(MAIN).pdf:$(MAIN).tex
+%.pdf:%.tex
 	$(LATEXMK) $<
 
 clean: 
@@ -20,7 +24,9 @@ clean:
 	@rm -f *.out
 	@rm -f *.snm
 	@rm -f *.toc
+	@rm -f *.vrb
 	@rm -f *.xdv
+	@rm -rf _minted 
 
 distclean : clean
 	@rm -f *.pdf
