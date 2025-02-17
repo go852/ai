@@ -4,7 +4,7 @@ LATEXMK=latexmk -xelatex --shell-escape
 LATEXMK=latexmk -quiet -xelatex --shell-escape
 TEX=$(wildcard *.tex)
 PDF=$(TEX:.tex=.pdf)
-MAIN=main
+MAIN=七年级上册
 
 .PHONY:all clean distclean c d
 
