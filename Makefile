@@ -1,14 +1,15 @@
 SHELL=bash
 LATEX=xelatex --shell-escape
 LATEXMK=latexmk -xelatex --shell-escape
-LATEXMK=latexmk -quiet -xelatex --shell-escape
+LATEXMK=latexmk -silent -xelatex --shell-escape
 TEX=$(wildcard *.tex)
 PDF=$(TEX:.tex=.pdf)
 MAIN=七年级上册
 
 .PHONY:all clean distclean c d
 
-all:$(PDF)
+#all:$(PDF)
+all:$(MAIN).pdf
 	make clean
 
 %.pdf:%.tex
